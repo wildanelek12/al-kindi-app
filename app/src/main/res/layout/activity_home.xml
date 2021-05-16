@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8EFFA"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_149sdp"
+        android:background="#FABA00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="@dimen/_272sdp"
+            android:layout_height="@dimen/_165sdp"
+            android:src="@drawable/img_masjid"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_38sdp"
+            android:text="Assalamu’alaikum sahabat Al Kindi"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_glass"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_162sdp"
+            android:layout_marginStart="@dimen/_17sdp"
+            android:layout_marginTop="@dimen/_70sdp"
+            android:layout_marginEnd="@dimen/_17sdp"
+            android:background="@drawable/glass"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="@dimen/_48sdp"
+                android:layout_height="@dimen/_48sdp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:src="@drawable/logo_image"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="@dimen/_126sdp"
+                android:layout_height="@dimen/_58sdp"
+                android:src="@drawable/logo_text"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:background="@drawable/divider_shape_1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+            <TextView
+                android:id="@+id/tv_location_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:text="Malang, 22 Desember 2020"
+                android:textColor="#000000"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view" />
+
+            <TextView
+                android:id="@+id/tv_prayer_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="Ashar 14:58 WIB"
+                android:textColor="#FABA00"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_location_time" />
+
+            <TextView
+                android:id="@+id/tv_countdown_prayer_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:text="01:47:50 Menjelang Adzan"
+                android:textColor="#000000"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_prayer_time" />
+
+            <ImageView
+                android:layout_width="@dimen/_46sdp"
+                android:layout_height="@dimen/_46sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:src="@drawable/qibla_compass_image"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_28sdp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cl_glass">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btn_menu_1"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@drawable/home_menu_shape_1"
+                android:elevation="@dimen/_5sdp"
+                app:layout_constraintEnd_toStartOf="@+id/btn_menu_2"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="@dimen/_43sdp"
+                    android:layout_height="@dimen/_43sdp"
+                    android:src="@drawable/home_menu_icon_1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="@dimen/_48sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:gravity="center_horizontal|top"
+                android:text="Al-Qur'an"
+                android:textColor="#000000"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="@+id/btn_menu_1"
+                app:layout_constraintStart_toStartOf="@+id/btn_menu_1"
+                app:layout_constraintTop_toBottomOf="@+id/btn_menu_1" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btn_menu_2"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@drawable/home_menu_shape_1"
+                android:elevation="@dimen/_5sdp"
+                app:layout_constraintEnd_toStartOf="@+id/btn_menu_3"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/btn_menu_1"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="@dimen/_43sdp"
+                    android:layout_height="@dimen/_43sdp"
+                    android:src="@drawable/home_menu_icon_2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="@dimen/_48sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:gravity="center_horizontal|top"
+                android:text="Dunia Sains"
+                android:textColor="#000000"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="@+id/btn_menu_2"
+                app:layout_constraintStart_toStartOf="@+id/btn_menu_2"
+                app:layout_constraintTop_toBottomOf="@+id/btn_menu_2" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btn_menu_3"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@drawable/home_menu_shape_1"
+                android:elevation="@dimen/_5sdp"
+                app:layout_constraintEnd_toStartOf="@+id/btn_menu_4"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/btn_menu_2"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="@dimen/_43sdp"
+                    android:layout_height="@dimen/_43sdp"
+                    android:src="@drawable/home_menu_icon_3"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="@dimen/_48sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:gravity="center_horizontal|top"
+                android:text="Waktu Sholat"
+                android:textColor="#000000"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="@+id/btn_menu_3"
+                app:layout_constraintStart_toStartOf="@+id/btn_menu_3"
+                app:layout_constraintTop_toBottomOf="@+id/btn_menu_3" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btn_menu_4"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@drawable/home_menu_shape_1"
+                android:elevation="@dimen/_5sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/btn_menu_3"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="@dimen/_43sdp"
+                    android:layout_height="@dimen/_43sdp"
+                    android:src="@drawable/home_menu_icon_4"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="@dimen/_48sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:gravity="center_horizontal|top"
+                android:text="Arah Kiblat"
+                android:textColor="#000000"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="@+id/btn_menu_4"
+                app:layout_constraintStart_toStartOf="@+id/btn_menu_4"
+                app:layout_constraintTop_toBottomOf="@+id/btn_menu_4" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout9">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btn_menu_5"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@drawable/home_menu_shape_1"
+                android:elevation="@dimen/_5sdp"
+                app:layout_constraintEnd_toStartOf="@+id/btn_menu_6"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="@dimen/_43sdp"
+                    android:layout_height="@dimen/_43sdp"
+                    android:src="@drawable/home_menu_icon_5"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="@dimen/_48sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:gravity="center_horizontal|top"
+                android:text="Tafsir Al-Qur’an"
+                android:textColor="#000000"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="@+id/btn_menu_5"
+                app:layout_constraintStart_toStartOf="@+id/btn_menu_5"
+                app:layout_constraintTop_toBottomOf="@+id/btn_menu_5" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btn_menu_6"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@drawable/home_menu_shape_1"
+                android:elevation="@dimen/_5sdp"
+                app:layout_constraintEnd_toStartOf="@+id/btn_menu_7"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/btn_menu_5"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="@dimen/_43sdp"
+                    android:layout_height="@dimen/_43sdp"
+                    android:src="@drawable/home_menu_icon_6"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="@dimen/_48sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:gravity="center_horizontal|top"
+                android:text="Doa Harian"
+                android:textColor="#000000"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="@+id/btn_menu_6"
+                app:layout_constraintStart_toStartOf="@+id/btn_menu_6"
+                app:layout_constraintTop_toBottomOf="@+id/btn_menu_6" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btn_menu_7"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@drawable/home_menu_shape_1"
+                android:elevation="@dimen/_5sdp"
+                app:layout_constraintEnd_toStartOf="@+id/btn_menu_8"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/btn_menu_6"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="@dimen/_43sdp"
+                    android:layout_height="@dimen/_43sdp"
+                    android:src="@drawable/home_menu_icon_7"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="@dimen/_48sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:gravity="center_horizontal|top"
+                android:text="Asmaul Husna"
+                android:textColor="#000000"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="@+id/btn_menu_7"
+                app:layout_constraintStart_toStartOf="@+id/btn_menu_7"
+                app:layout_constraintTop_toBottomOf="@+id/btn_menu_7" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btn_menu_8"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@drawable/home_menu_shape_1"
+                android:elevation="@dimen/_5sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/btn_menu_7"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="@dimen/_43sdp"
+                    android:layout_height="@dimen/_43sdp"
+                    android:src="@drawable/home_menu_icon_8"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="@dimen/_48sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:gravity="center_horizontal|top"
+                android:text="Quotes Inspirasi"
+                android:textColor="#000000"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="@+id/btn_menu_8"
+                app:layout_constraintStart_toStartOf="@+id/btn_menu_8"
+                app:layout_constraintTop_toBottomOf="@+id/btn_menu_8" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_17sdp"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:text="Informasi Untukmu"
+            android:textColor="#000000"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_17sdp"
+            android:text="Lihat Semua"
+            android:textColor="#FABA00"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+<!--        TODO: Make News Card-->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="@dimen/_273sdp"
+            android:layout_height="@dimen/_43sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:background="@drawable/navigation_shape_1"
+            android:elevation="@dimen/_5sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
