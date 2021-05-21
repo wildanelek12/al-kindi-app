@@ -50,7 +50,7 @@
 
         <View
             android:id="@+id/v_active_feed_menu"
-            android:visibility="visible"
+            android:visibility="invisible"
             android:layout_width="@dimen/_7sdp"
             android:layout_height="@dimen/_7sdp"
             android:layout_marginTop="@dimen/_5sdp"
@@ -171,102 +171,23 @@
                 android:layout_height="@dimen/_7sdp"
                 android:layout_marginTop="@dimen/_5sdp"
                 android:background="@drawable/ellipse_shape_1"
-                android:visibility="invisible"
+                android:visibility="visible"
                 app:layout_constraintEnd_toEndOf="@+id/tv_quotes_inspirasi_menu"
                 app:layout_constraintStart_toStartOf="@+id/tv_quotes_inspirasi_menu"
                 app:layout_constraintTop_toBottomOf="@+id/tv_quotes_inspirasi_menu" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardView"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_feed_quotes"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_171sdp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_18sdp"
             android:layout_marginTop="@dimen/_14sdp"
             android:layout_marginEnd="@dimen/_18sdp"
-            app:cardCornerRadius="@dimen/_20sdp"
-            app:cardElevation="0dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:id="@+id/imageView5"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/img_aurora_banner"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_51sdp"
-                    android:background="#99FFFFFF"
-                    app:layout_constraintBottom_toBottomOf="@+id/imageView5"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent">
-
-                    <TextView
-                        android:id="@+id/tv_category_banner"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_18sdp"
-                        android:text="Literasi Kimia"
-                        android:fontFamily="@font/montserrat_semibold"
-                        android:textColor="#000000"
-                        android:textSize="@dimen/_8ssp"
-                        app:layout_constraintBottom_toTopOf="@+id/tv_title_banner"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/tv_title_banner"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_18sdp"
-                        android:text="Aurora Menurut Al-Qur’an dan Kimia"
-                        android:fontFamily="@font/montserrat_bold"
-                        android:textColor="#000000"
-                        android:textSize="@dimen/_12ssp"
-                        app:layout_constraintBottom_toTopOf="@+id/tv_post_time_banner"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/tv_category_banner" />
-
-                    <TextView
-                        android:id="@+id/tv_post_time_banner"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_18sdp"
-                        android:text="Senin, 21 Desember 2020 10:10 WIB"
-                        android:fontFamily="@font/montserrat_regular"
-                        android:textColor="#000000"
-                        android:textSize="@dimen/_8ssp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/tv_title_banner" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-            </androidx.constraintlayout.widget.ConstraintLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_feed"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:scrollbars="vertical"
-            android:layout_marginStart="@dimen/_18sdp"
-            android:layout_marginTop="@dimen/_12sdp"
-            android:layout_marginEnd="@dimen/_18sdp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cardView" />
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
