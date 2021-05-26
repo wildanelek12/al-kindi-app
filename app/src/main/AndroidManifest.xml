@@ -1,32 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="id.codes.al_kindi_app">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        tools:replace="android:icon"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
         android:theme="@style/Theme.Alkindiapp">
         <activity android:name=".FeedDetailActivity"></activity>
         <activity android:name=".TafsirActivity" />
         <activity android:name=".QuranContentActivity" />
-        <activity android:name=".QuranActivity" />
-        <activity android:name=".QiblaDirectionActivity" />
-        <activity android:name=".FeedQuotesActivity" />
-        <activity android:name=".SplashScreenActivity" />
-        <activity android:name=".FeedContentActivity" />
-        <activity android:name=".FeedDuniaSainsActivity" />
-        <activity android:name=".FeedActivity" />
-        <activity android:name=".HomeActivity" />
-        <activity android:name=".SignUpActivity" />
-        <activity android:name=".LoginActivity">
+        <activity android:name=".QuranActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".QiblaDirectionActivity" />
+        <activity android:name=".FeedQuotesActivity" />
+        <activity android:name=".SplashScreenActivity" />
+        <activity android:name=".FeedContentActivity" >
+
+        </activity>
+        <activity android:name=".FeedDuniaSainsActivity" />
+        <activity android:name=".FeedActivity" >
+
+        </activity>
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".SignUpActivity" >
+        </activity>
+        <activity android:name=".LoginActivity">
+
         </activity>
         <activity android:name=".MainActivity" />
     </application>

@@ -261,6 +261,7 @@
                 android:paddingVertical="@dimen/_24sdp" >
 
                 <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_quran"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:layout_constraintEnd_toEndOf="parent"
