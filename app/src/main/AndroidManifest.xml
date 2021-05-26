@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Alkindiapp">
-        <activity android:name=".QuranActivity"></activity>
+        <activity android:name=".FeedDetailActivity"></activity>
+        <activity android:name=".TafsirActivity" />
+        <activity android:name=".QuranContentActivity" />
+        <activity android:name=".QuranActivity" />
         <activity android:name=".QiblaDirectionActivity" />
         <activity android:name=".FeedQuotesActivity" />
         <activity android:name=".SplashScreenActivity" />

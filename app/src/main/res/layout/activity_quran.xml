@@ -40,24 +40,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_8sdp"
-            android:text="Al-Qur'an"
             android:fontFamily="@font/montserrat_semibold"
+            android:text="Al-Qur'an"
             android:textColor="#FFFFFF"
             android:textSize="@dimen/_14ssp"
             app:layout_constraintBottom_toBottomOf="@+id/imageView4"
             app:layout_constraintStart_toEndOf="@+id/imageView4"
             app:layout_constraintTop_toTopOf="@+id/imageView4" />
-
-        <View
-            android:id="@+id/v_active_feed_menu"
-            android:visibility="invisible"
-            android:layout_width="@dimen/_7sdp"
-            android:layout_height="@dimen/_7sdp"
-            android:layout_marginTop="@dimen/_5sdp"
-            android:background="@drawable/ellipse_shape_1"
-            app:layout_constraintEnd_toEndOf="@+id/tv_feed_menu"
-            app:layout_constraintStart_toStartOf="@+id/tv_feed_menu"
-            app:layout_constraintTop_toBottomOf="@+id/tv_feed_menu" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="@dimen/_158sdp"
@@ -95,17 +84,18 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_59sdp"
             android:layout_marginStart="@dimen/_17sdp"
             android:layout_marginTop="@dimen/_58sdp"
             android:layout_marginEnd="@dimen/_17sdp"
+            app:cardBackgroundColor="#ECFFFFFF"
             app:cardCornerRadius="@dimen/_20sdp"
             app:cardElevation="0dp"
-            app:cardBackgroundColor="#ECFFFFFF"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" >
+            app:layout_constraintTop_toTopOf="parent">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -134,6 +124,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
+                    android:id="@+id/tv_last_read"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/montserrat_semibold"
@@ -144,7 +135,140 @@
                     app:layout_constraintStart_toStartOf="@+id/textView5"
                     app:layout_constraintTop_toBottomOf="@+id/textView5" />
             </androidx.constraintlayout.widget.ConstraintLayout>
-            
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn_nav_surat"
+            android:layout_width="@dimen/_84sdp"
+            android:layout_height="@dimen/_29sdp"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:background="@drawable/navigation_shape_2"
+            app:layout_constraintEnd_toStartOf="@+id/btn_nav_juz"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Surat"
+                android:textColor="#000000"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/v_active_nav_surat"
+            android:layout_width="@dimen/_7sdp"
+            android:layout_height="@dimen/_7sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/ellipse_shape_2"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/btn_nav_surat"
+            app:layout_constraintStart_toStartOf="@+id/btn_nav_surat"
+            app:layout_constraintTop_toBottomOf="@+id/btn_nav_surat" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn_nav_juz"
+            android:layout_width="@dimen/_84sdp"
+            android:layout_height="@dimen/_29sdp"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:background="@drawable/navigation_shape_2"
+            app:layout_constraintEnd_toStartOf="@+id/btn_nav_favorit"
+            app:layout_constraintStart_toEndOf="@+id/btn_nav_surat"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Juz"
+                android:textColor="#000000"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/v_active_nav_juz"
+            android:layout_width="@dimen/_7sdp"
+            android:layout_height="@dimen/_7sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/ellipse_shape_2"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/btn_nav_juz"
+            app:layout_constraintStart_toStartOf="@+id/btn_nav_juz"
+            app:layout_constraintTop_toBottomOf="@+id/btn_nav_juz" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn_nav_favorit"
+            android:layout_width="@dimen/_84sdp"
+            android:layout_height="@dimen/_29sdp"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:background="@drawable/navigation_shape_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_nav_juz"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Favorit"
+                android:textColor="#000000"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/v_active_nav_favorit"
+            android:layout_width="@dimen/_7sdp"
+            android:layout_height="@dimen/_7sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/ellipse_shape_2"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/btn_nav_favorit"
+            app:layout_constraintStart_toStartOf="@+id/btn_nav_favorit"
+            app:layout_constraintTop_toBottomOf="@+id/btn_nav_favorit" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_300sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            app:cardCornerRadius="@dimen/_17sdp"
+            app:cardElevation="0dp"
+            app:layout_constraintEnd_toEndOf="@+id/cardView2"
+            app:layout_constraintStart_toStartOf="@+id/cardView2"
+            app:layout_constraintTop_toBottomOf="@+id/v_active_nav_juz" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_24sdp" >
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
