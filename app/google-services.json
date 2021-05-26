@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "802732675168",
+    "project_id": "al-kindi-905a6",
+    "storage_bucket": "al-kindi-905a6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:802732675168:android:217eb4d4801f2cf7e93305",
+        "android_client_info": {
+          "package_name": "id.codes.al_kindi_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "802732675168-25876tg5khk16jn07kl6gilfkn0hopbq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyjC4fuosv56D11StAZyuCIvT_NG6dfMk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "802732675168-25876tg5khk16jn07kl6gilfkn0hopbq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

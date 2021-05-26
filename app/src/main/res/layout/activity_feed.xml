@@ -87,7 +87,6 @@
                 android:textColor="#FFFFFF"
                 android:textColorHint="#99FFFFFF"
                 android:textSize="@dimen/_10ssp"
-                android:background="null"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

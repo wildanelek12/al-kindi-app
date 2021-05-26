@@ -72,7 +72,6 @@
                 android:layout_height="match_parent"
                 android:layout_marginStart="@dimen/_36sdp"
                 android:layout_marginEnd="@dimen/_12sdp"
-                android:background="null"
                 android:hint="Cari Artikel atau Topik"
                 android:textColor="#FFFFFF"
                 android:textColorHint="#99FFFFFF"
